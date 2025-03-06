@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      background: #080808;
+      color: #fff;
+  }
+  #header{
+      width: 100%;
+      height: 100vh;
+      background-image: url('https://res.cloudinary.com/djqzpak1s/image/upload/v1741259233/ss3dwsgxlijnhbkwlzdx.png');
+      background-size: cover;
+      background-position: center;
+  }
+  .container{
+      padding: 2px 5%;
+  }
+  nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      /* padding: 10px 20px; */
+
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Allows centering */
+    list-style: none;
+    padding: 0;
+  }
+
+  .logo{
+    width: 80px; 
+    height: auto; 
+  }
+  
+  nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+      position: relative;
+  }
+  
+  nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+  }
+  
+  nav ul li a::after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after{
+      width: 100%;
+  }
+  .header-text{
+      margin-top: 5%;
+      font-size: 30px;
+  }
+  .header-text h1{
+      font-size: 100px;
+      margin-top: 5px;
+  }
+  .header-text h1 span{
+      color: #ff004f;
+  }
+
+  .header-text p {
+    text-decoration: underline;
+    text-decoration-color:  #ff004f; /* Sets underline color to red */
+    text-decoration-thickness: 2px; /* Adjusts thickness */
+    border-bottom: 2px;
+  padding-bottom: 5px; /* Adjust this value for more space */
+  }
+
+                             /* ------------------------------   ABOUT Section ------------------------- */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    margin-top: 75px;
+    width: 5000%;  /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Prevent excessive scaling */
+    position: relative;
+    right: -145%; /* Move the image off-screen to the right */
+    opacity: 0; /* Initially hidden */
+    transition: transform 1.2s ease-out, opacity 1s ease-out;
+}
+
+.about-col-1 img.animate {
+    transform: translateX(-100%);
+    opacity: 1;
+}
+
+.underline {
+    display: inline-block;  
+    border-bottom: 3px solid #ff004f; /* Creates an underline */
+    padding-bottom: 10px;  /* Increases space between text and underline */
+    margin-top: 10px;      
+    margin-left: 120px;
+
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 1s ease-in; /* Smooth fade-in effect */
+}
+
+.underline.show {
+    opacity: 1;  /* Fully visible */
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 70px;
+    font-weight: 500;
+    color: #ff004f;
+    /* text-decoration-line: underline; */
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    gap: 10px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: circle;
+    margin: 20px 0px;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 18px;
+}
+.tab-contents{
+    display: none; 
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+.work {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    text-align: center; /* Center align text inside */
+    position: relative;
+}
+
+.layer p {
+    max-height: 100px; /* Limits the height of the paragraph */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Adds "..." to indicate hidden text */
+    white-space: normal; /* Allows text wrapping */
+    word-wrap: break-word; /* Breaks long words */
+    padding: 5px;
+    border: 2px solid #ff004f; /* Optional: Adds border */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Light background for visibility */
+    margin-right: 90px;
+    margin-top: 10px;
+  }
+
+/* Styling for the h1 */
+#memories {
+    font-size: 2.8rem; /* Slightly larger text */
+    font-weight: bold;
+    font-style: italic; /* Make text italic */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #ff002f, #ff2244, #ff5566); /* More reddish gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient Text Effect */
+    animation: fadeIn 2s ease-in-out, floatText 3s infinite ease-in-out alternate, glow 1.5s infinite alternate;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating movement */
+@keyframes floatText {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(12px); /* Slightly reduced floating */
+    }
+}
+
+/* Softer glowing effect with a reddish tone */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 2px #ff002f, 0 0 4px #ff2244;
+    }
+    to {
+        text-shadow: 0 0 5px #ff002f, 0 0 8px #ff5566;
+    }
+}
+
+/* Styling for the span */
+#memories span {
+    font-size: 2rem; /* Slightly bigger */
+    color: #ff7788; /* Lighter red-pink shade */
+    font-weight: 700;
+    display: block;
+    font-style: italic; /* Italics for span too */
+    animation: slideIn 2s ease-out;
+}
+
+/* Slide in animation for span */
+@keyframes slideIn {
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact-left{
+    flex-basis: 35%;
+ }
+ .contact-right{
+    flex-basis: 60%;
+ }
+
+ .contact-left h2{
+    color: #fff;
+
+}
+  
+ .contact-left h2 span{
+    color: #ff004f;
+ } 
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 10px;
+} 
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 30px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY( -5px);
+}
+
+.btn.btn2{
+    color: #fff;
+    display: inline-block;
+    background: #ff004f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.sub-title {
+    font-size: 50px; /* Adjust the size here as needed */
+  }
+
+
+#portfolio {
+    padding: 50px 0;
+}
+
+#portfolio .container h1 {
+    color: #fff;
+    font-weight: bold;
+}
+
+#portfolio .work-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+#portfolio .work {
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .work img {
+    width: 100%;
+    max-width: 400px; /* Adjust this value based on how small you want the image */
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+#portfolio .layer {
+    margin-left: 280px;
+    width: 50%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0 45px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s ease-in-out;
+}
+
+#portfolio .layer h4 {
+    font-weight: 650;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+#portfolio .layer a {
+    margin-top: 30px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#portfolio .work:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#portfolio .work:hover .layer {
+    height: 40%; /* This ensures the layer covers the image completely in height */
+}
+
+#download_links {
+    text-align: center; /* Centers the text horizontally */
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 40px;   /* Adds top margin to the element (adjust as needed) */
+}
+
+#download_links a {
+    color: #277eda; /* Sets color for the link */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+
+
+#download_links span {
+    color: #ff004f; /* Sets color for the "Download:" text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  

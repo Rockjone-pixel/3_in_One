@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="https://res.cloudinary.com/djqzpak1s/image/upload/f_auto,q_auto/NITS_Logo_n5u1fk" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Toy</a></li>            
+            <li><a href="#about">User-Manual</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">User-Manual</a></li>            
+            <li><a href="#contact">Feedback/Contacts</a></li>
+            <i class="fa-solid fa-xmark" onclick=" closemenu() "></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick=" openmenu() "></i>
+        </nav>
+        <div class="header-text">
+          <h1>3-in-1<span>Drone</span></h1>
+          <p>Compact Mini Drone Toy</p>
+          <!-- <img src="final done.png" id="bg photo"> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <--------------------------------        ABOUT           ------------------------------------>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-2">
+            <h1 class="sub-title">About Our Toy:-</h1>
+            <p style="text-align: justify">
+              Our 3-in-1 Drone Toy is a revolutionary blend of air, land, and
+              water action, seamlessly transforming between
+              <span style="color: #ff004f"> Drone</span> ,
+              <span style="color: #ff004f"> Car </span> , and<span
+                style="color: #ff004f"
+              >
+                Boat
+              </span>
+              Modes for limitless fun!Its adaptive motor orientation, smooth
+              maneuverability, and stunt-ready design make it stand out from
+              ordinary toys. Beyond entertainment, it serves as a hands-on
+              educational tool, introducing kids to STEM concepts like
+              aerodynamics, robotics, and multi-mode mechanics, fostering
+              creativity, problem-solving, and engineering skills—making
+              learning as thrilling as play!
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('thrilling Features')"
+              >
+                Thrilling Features
+              </p>
+              <p class="tab-links" onclick="opentab('triple-Mode Power')">
+                Triple-Mode Power
+              </p>
+              <p class="tab-links" onclick="opentab('learn While You Play')">
+                Learn While You Play
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="thrilling Features">
+              <ul>
+                <li>
+                  <span> Flip & Roll Stunts</span><br />Execute jaw-dropping
+                  360° flips and smooth rolls in Drone Mode, making every flight
+                  thrilling and dynamic.
+                </li>
+                <li>
+                  <span>Yaw & Precision Control</span><br />Experience precise
+                  yaw motion, allowing for effortless turns, rotations, and
+                  stable hovering in the air while in Drone-Mode.
+                </li>
+                <li>
+                  <span> Smooth Turns & Drifts</span><br />Master the art of
+                  maneuvering with seamless turns, drifts, and spins in Car
+                  Mode, ensuring a fun and immersive driving experience.
+                </li>
+                <li>
+                  <span>Aqua Glide Motion</span><br />
+                  Sail effortlessly in Boat Mode with fluid-like movement,
+                  adapting to water currents while maintaining stability.
+                </li>
+                <li>
+                  <span>LED-Powered Night Mode </span><br />
+                  Light up the action with colorful LED lights, enhancing
+                  visibility and making night-time play even more exciting.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="triple-Mode Power">
+              <ul>
+                <li>
+                  <span> Airborne Dominance (Drone Mode)</span><br />Take flight
+                  with stable hovering, smooth yaw control, and thrilling 360°
+                  flips, making the sky your playground.
+                </li>
+                <li>
+                  <span>Ground Speedster (Car Mode)</span><br />Transform into a
+                  high-speed car with precise steering, effortless drifts, and
+                  caster wheel support for smooth land movement.
+                </li>
+                <li>
+                  <span> Aqua Navigator (Boat Mode)</span><br />Glide over water
+                  with streamlined motion, adaptive balance, and precise
+                  directional control, ensuring a seamless boating experience.
+                </li>
+                <li>
+                  <span>Seamless Mode Switching</span><br />Instantly switch
+                  between Drone, Car, and Boat Modes with adaptive motor
+                  orientation, delivering uninterrupted excitement across
+                  terrains.
+                </li>
+                <li>
+                  <span>Multi-Environment Play</span><br />Designed for indoor &
+                  outdoor adventures, from hallways to open fields, roads, and
+                  even pools or lakes—play anywhere, anytime!3
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="learn While You Play">
+              <ul>
+                <li>
+                  <span>Hands-On STEM Learning</span><br />
+                  Understand basic engineering principles like aerodynamics,
+                  propulsion, and mechanical dynamics while having fun.
+                </li>
+                <li>
+                  <span>DIY Modifications & Customization</span><br />
+                  Encourages creativity and problem-solving by allowing future
+                  modifications, upgrades, and custom add-ons.
+                </li>
+                <li>
+                  <span>Wireless Communication & Electronics</span><br />Learn
+                  about remote control systems, sensor-based operations, and
+                  microcontroller integration (ideal for young tech
+                  enthusiasts).
+                </li>
+                <li>
+                  <span> Logical Thinking & Problem-Solving </span><br />
+                  Enhances critical thinking skills as players learn to
+                  maneuver, troubleshoot, and optimize performance in different
+                  modes.
+                </li>
+                <li>
+                  <span>Future-Ready Toy</span><br />
+                  A gateway to robotics, programming, and automation, inspiring
+                  young minds to build and innovate for the future.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-col-1">
+            <img id="animated-image" src="https://res.cloudinary.com/djqzpak1s/image/upload/f_auto,q_auto/misvd7w03i0xvlppo4zm" alt="3-in-1 Toy" />
+            <p class="underline">3-in-1 Compact Toy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------   3rd Part   -----------------------------------------------    -->
+
+    <div id="secondpage" id="comeoff">
+      <div class="container">
+        <h1 id="memories" class="sub-title">
+          <span>3-Action-Modes:-</span> DRONE Mode , BOAT Mode , CAR Mode
+        </h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="https://res.cloudinary.com/djqzpak1s/image/upload/f_auto,q_auto/wmjlp8f1bqbgi2xp9z8p" />
+            <div class="layer">
+              <h4 style="color: #ff004f">Drone mode</h4>
+              <p>
+                Functions as a conventional quadcopter, capable of performing
+                smooth aerial movements like flips, yaw, forward/backward
+                motion, and hovering.Provides an exciting flying experience with
+                precise control and stunts.Functions as a quadcopter, performing
+                movements like flips, yaw, and directional motions (forward,
+                backward, sideways). Capable of executing aerial stunts, adding
+                excitement to playtime.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="https://res.cloudinary.com/djqzpak1s/image/upload/v1741119021/eta_boat_eyjhx8.png" />
+            <div class="layer">
+              <h4 style="color: #ff004f">Boat Mode</h4>
+              <p>
+                When placed in water with required changes, the drone
+                transitions seamlessly into a boat, utilizing its motor-assisted
+                system for smooth and efficient motion. The streamlined body
+                minimizes water resistance, ensuring stability and steady
+                navigation across pools, ponds, or calm lakes. This design makes
+                it a fascinating and engaging addition to playtime, combining
+                fun with creative exploration.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="https://res.cloudinary.com/djqzpak1s/image/upload/f_auto,q_auto/zevjxrhdrt5idhxo60yr" />
+            <div class="layer">
+              <h4 style="color: #ff004f">Car Mode</h4>
+              <p>
+                The Car Mode of our 3-in-1 drone ensures smooth and efficient
+                ground movement with a robust design. Adjustable motor
+                orientation enables quick transformation, while caster wheels
+                provide effortless maneuverability on various surfaces. The same
+                motors used for flight power car-like motions, including
+                forward, reverse, and turning, ensuring precise control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------- User-Manual & Portfolio ------------------------------ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title"><span style="color: #ff004f">User-Manual</span> / <span style="color: #ff004f">Portfolio</span> :- </h1>
+        <div class="work-list">
+
+
+          <div class="work">
+            <img src="https://res.cloudinary.com/djqzpak1s/image/upload/f_auto,q_auto/hzr13wrb96munlpf9eer" />
+            <div id="User-Manual"  class="layer">
+              <h4> User-Manual :- </h4>
+              <p>The 3-in-1 Compact Drone Toy User Manual offers simple instructions for setup, operation, and troubleshooting, ensuring an easy and fun flying experience. Perfect for both beginners and drone enthusiasts!</p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <p id="download_links">
+            <i class="fa-solid fa-cart-shopping"></i
+            ><span style="color: #ff004f"> Download :- </span
+            ><a href=" https://drive.google.com/file/d/1975WFc48adi5tdrM5XQ4fmmWsLhkSH3R/view" target="_blank"
+              ><span style="color: #277eda"> User-Manual_downloadlink </span></a
+            >
+          </p>   
+
+
+          <div  id="Portfolio" class="work">
+            <img src="https://res.cloudinary.com/djqzpak1s/image/upload/v1741259677/jmbbjgqbobp9ordwxstg.png" />
+            <div class="layer">
+              <h4>Portfolio :- </h4>
+              <p>
+                The 3-in-1 Compact Drone Toy Portfolio highlights the drone’s key features, including its three flying modes, durable build, and user-friendly design. It showcases the toy’s versatility and appeal to both beginners and enthusiasts, offering hours of fun in a compact, innovative package.
+              </p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <p id="download_links">
+            <i class="fa-solid fa-cart-shopping"></i
+            ><span style="color: #ff004f"> Download :- </span
+            ><a href=" https://drive.google.com/file/d/196V4SFNeEzR9mB_9GrLMM_1aC1PbCPR1/view?usp=drivesdk " target="_blank"
+              ><span style="color: #277eda"> Portfolio_downloadlink </span></a
+            >
+          </p>               
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------Feedback--------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title"><span>Contact</span> US :-</h2>
+            <p>
+              <i class="fa-solid fa-envelope"></i> compactdronetoy@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 90794-94724</p>
+            <p>
+              <i class="fa-solid fa-cart-shopping"></i
+              ><span style="color: #ff004f"> Order Now :- </span
+              ><a href=" http://www.compactdronetoy.com/order" target="_blank"
+                ><span style="color: #277eda"> Order here </span></a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-comments"></i
+              ><span style="color: #ff004f"> Customer Support :- </span>
+              <span style="font-size: 14px">support@compactdronetoy.com</span>
+            </p>
+
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61550904170530"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/Rockjone-pixel"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ayushman-sagar-baruah-b423b328a/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/ayushman___sagar/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="User-Manual.pdf" download class="btn btn2"
+              >Download User-Manual</a
+            >
+          </div>
+          <div class="contact-right">
+            <div class="feedback" id="feedback_final"><p></p></div>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Feed-Back/Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- JS ----------------------- -->
+    <script>
+      // Wait for page load
+      document.addEventListener("DOMContentLoaded", function () {
+        let image = document.getElementById("animated-image");
+
+        // Trigger animation after a small delay
+        setTimeout(() => {
+          image.classList.add("animate");
+        }, 4000);
+      });
+    </script>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        // The for (tablink of tablinks) loop is a way to iterate over all elements with the class "tab-links" to manipulate their classes.
+        // The variable tablink is a placeholder for the current element in the iteration and is not a predefined word in JavaScript; it is just a variable name chosen for readability and context.
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.left = "200px";
+      }
+      function closemenu() {
+        sidemeu.style.left = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxh8oZ3yqM_NnlrXc3Kmuk2qDkPAdElRlBax3A3C2QSYYPDekjXjcGOuXx62nj8ypiZ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Your message was sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+              form.reset();
+            }, 5000);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.querySelector(".underline").classList.add("show");
+        }, 5000); // Delay of 5 seconds before appearing
+      });
+    </script>
+    
+  </body>
+</html>
